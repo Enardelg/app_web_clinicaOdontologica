@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Alta Paciente</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <script type="text/javascript" src="/js/post_paciente.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+<header>
+    <nav role="navigation">
+        <ul class="hidden">
+            <li><a class="nav-link" href="listaPaciente.html">Administracion Clinica</a></li>
+            <li><a class="nav-link" href="index.html">Volver al Home</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="row justify-content-center">
+    <div class="col-sm-9" style="background-color: #4acee8; padding:30px; border-radius:3px; margin-top: 40px">
+        <h3>Agregar Paciente</h3>
+        <form id="nuevo_paciente">
+            <div class="form-group">
+                <label class="control-label" for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre"
+                       name="nombre" required></input>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="apellido">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Ingrese el apellido"
+                       name="apellido" required></input>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="dni">DNI:</label>
+                <input type="text" class="form-control" id="dni" placeholder="Ingrese su DNI"
+                       name="dni" required></input>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="fechaDeIngreso">Fecha de ingreso:</label>
+                <input type="text" class="form-control" id="fechaDeIngreso" placeholder="Ingrese fecha de ingreso"
+                       name="fechaDeIngreso" required></input>
+            </div>
+            <button type="submit" class="btn btn-danger" id="btn-add-new-paciente">Guardar</button>
+        </form>
+        <div id="response" style="display:none; margin-top:10px">
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+
+</html>

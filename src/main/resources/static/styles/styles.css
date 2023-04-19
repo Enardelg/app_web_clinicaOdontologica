@@ -1,0 +1,82 @@
+@import url("header.css");
+@import url("forms.css");
+
+:root {
+  --primary-color: #008a9f;
+  --primary-color-lighter: #669aaf;
+  --primary-color-darker: #0d4854;
+  --primary-color-darkerHover: #07576e;
+  --secondary-color: #59f9ff;
+  --secondary-color-lighter: #aefff7;
+  --background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 80vh;
+  display:flex;
+  flex-direction:column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main > .imagen > img {
+  width:100vw;
+}
+
+footer {
+  margin-top:auto;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding-top: 20px;
+}
+
+footer p {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+main div.imagen-clinica {
+  background-image: url("../img/clinicaOdonto.jpg");
+  background-repeat: no repeat;
+  background-size: cover;
+  width: 100%;
+  height:84.1vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+main div.imagen-clinica h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+}
+
+.informacion {
+  width: 100%;
+  margin-top: 4rem;
+  margin-left: 20%;
+}
+
+.display-none {
+  display: none;
+}
